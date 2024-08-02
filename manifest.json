@@ -1,0 +1,30 @@
+{
+
+  "description": "A music downloader for OpenVK",
+  "manifest_version": 2,
+  "name": "OpenVK Music Downloader",
+  "version": "1.0",
+  "homepage_url": "https://ovk.to",
+  "icons": {
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "64": "icons/64.png",
+    "96": "icons/96.png"
+  },
+  "browser_action": {
+    "default_popup": "options.html"
+  },
+  "options_ui": {
+    "page": "options.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.ovk.to/*"],
+      "js": ["patch_page.js"]
+    }
+  ]
+
+}

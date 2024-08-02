@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenVK Music Downloader</title>
+    <link rel="stylesheet" href="options.css" /> 
+</head>
+<body>
+    <h3><img src="icons/19.png" class="logo"/>OpenVK Music Downloader</h3>
+    <div class="settings-container">
+        <div class="setting">
+            <select id="extLang">
+                <option value="en">English</option>
+                <option value="ru">Русский</option>
+                <option value="uk">Українська</option>
+            </select>
+        </div>
+        <div class="token-input">
+            <label for="userInput" id="tokenLabel"></label>
+            <input type="text" id="tokenInput" placeholder="Введите что-нибудь..."> <label> <a href="https://docs.ovk.to/openvk_engine/en/api/description">(?)</a></label>
+        </div>
+        <button id="save"></button>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+</html>

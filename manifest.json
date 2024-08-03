@@ -4,7 +4,7 @@
   "manifest_version": 2,
   "name": "OpenVK Music Downloader",
   "version": "1.0",
-  "homepage_url": "https://ovk.to",
+  "homepage_url": "https://github.com/koke228666/OpenVKMD",
   "icons": {
     "32": "icons/32.png",
     "48": "icons/48.png",
@@ -22,7 +22,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["*://*.ovk.to/*"],
+      "matches": ["*://*.ovk.to/*", "*://*.openvk.xyz/*"],
       "js": ["patch_page.js"]
     }
   ]

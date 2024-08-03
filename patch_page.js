@@ -2,6 +2,14 @@
 var style = document.createElement('style');
 style.type = 'text/css';
 
+// грузим токен
+browser.storage.local.get(['extLang', 'extToken']).then((result) => {
+	ovkToken = result.extToken || '';
+	extLang = result.extLang || 'en';
+	errmsg = translations[extLang]['err'];
+});
+
+
 // языки
 const translations = {
             'en': {
